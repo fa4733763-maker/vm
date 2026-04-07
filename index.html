@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading...</title>
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Wait for it 👀🔥">
+  <meta property="og:description" content="You won't regret this 😏">
+  <meta property="og:image" content="https://raw.githubusercontent.com/fa4733763-maker/vm/main/preview.jpg">
+  <meta property="og:url" content="https://getmysocial.com/vicmadison">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+
+  <script>
+    // Liste des étapes (tu peux ajouter plus de liens)
+    const steps = [
+      "step2.html",
+      "https://getmysocial.com/vicmadison"
+    ];
+
+    let index = 0;
+
+    function nextStep() {
+      if (index < steps.length) {
+        window.location.href = steps[index];
+        index++;
+      }
+    }
+
+    // Redirection progressive (plus safe)
+    setTimeout(nextStep, 1200);
+  </script>
+
+</head>
+<body>
+  <img src="https://raw.githubusercontent.com/fa4733763-maker/vm/main/preview.jpg" alt="preview">
+</body>
+</html>
